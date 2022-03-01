@@ -1,0 +1,8 @@
+:root {
+    /* Declaring Variable CSS */
+    --color-blue: #0065FC;
+    --color-lightblue: #DEEBFF;
+    --bg-color: #f2f2f2;
+
+    font-family: 'Raleway', sans-serif;
+}
