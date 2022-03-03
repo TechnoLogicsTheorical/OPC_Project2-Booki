@@ -1,27 +1,138 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Booki - Site d'hébergement</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Booki - Site d'hébergement</title>
 
-    <!-- Style Importing -->
-    <!-- Normalize CSS Web Browser -->
-    <link rel="stylesheet" href="css/normalize.css">
+        <!-- Style Importing -->
+        <!-- Normalize CSS Web Browser -->
+        <link rel="stylesheet" href="css/normalize.css">
 
-    <!-- Google Font RaleWay -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+        <!-- Google Font RaleWay -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
-    
-    <!-- Own CSS -->
-    <link rel="stylesheet" href="css/main-style.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+        
+        <!-- Own CSS -->
+        <link rel="stylesheet" href="css/main-style.css">
+    </head>
 
-</head>
-<body>
-    
-</body>
+    <body>
+        <!-- Starting Header -->
+        <header>
+            <img src="./images/logo/Booki.png" alt="Logo du site">
+            <nav>
+                <ul>
+                    <li><a href="#hebergement">Hébergement</a></li>
+                    <li><a href="#activites">Activités</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Ending Header & starting main content -->
+        <main>
+            <!-- Start of search menu section -->
+            <section>
+                <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+                <p>En plein centre ville ou en pleine nature</p>
+                <form action="">
+                    <i>Icone</i>
+                    <input type="text" name="" id="">
+                    <input type="button" value="Rechercher">
+                </form>
+                <i>Plus de 500 logements sont disponibles dans cette ville</i>
+            </section>
+
+            <!-- Start of accommodation section -->
+            <section>
+                <h2>Hébergements à Marseille</h2>
+                <!-- Flex Container -->
+                <div>
+                    <!-- Product Display Card -->
+                    <article>
+                        <img src="./images/hebergements/4_small/Auberge_Cannebiere.jpg" alt="Auberge La Cannnebière">
+                        <h3>Auberge La Cannnebière</h3>
+                        <p>Nuit à partir de <strong>25€</strong></p>
+                        <div>
+                            <i>Etoile</i>
+                            <i>Etoile</i>
+                            <i>Etoile</i>
+                            <i>Etoile</i>
+                            <i>Etoile</i>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+            <!-- Beginning of the "Most popular" section -->
+            <section>
+                <!-- Flex Container for two elements of the title -->
+                <div>
+                    <h2>Hébergements à Marseille</h2>
+                    <i>icone</i>
+                </div>
+                
+                <!-- Flex Container -->
+                <div>
+                    <!-- Product Display Card -->
+                    <article>
+                        <img src="./images/hebergements/4_small/Auberge_Cannebiere.jpg" alt="Auberge La Cannnebière">
+                        <h3>Auberge La Cannnebière</h3>
+                        <p>Nuit à partir de <strong>25€</strong></p>
+                        <div>
+                            <i>Etoile</i>
+                            <i>Etoile</i>
+                            <i>Etoile</i>
+                            <i>Etoile</i>
+                            <i>Etoile</i>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Beginning of the "Activities in Marseille" section -->
+            <section>
+                <h2>Activités à Marseille</h2>
+                <!-- Flex Container -->
+                <div>
+                    <!-- Product Display Card -->
+                    <article>
+                        <img src="./images/hebergements/4_small/Auberge_Cannebiere.jpg" alt="Auberge La Cannnebière">
+                        <h3>Auberge La Cannnebière</h3>
+                    </article>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <div>
+                <h2>A propos</h2>
+                <ul>
+                    <li><a href="#">Fonctionnement du site</a></li>
+                    <li><a href="#">Conditions génerales de ventes</a></li>
+                    <li><a href="#">Données et confidentialité</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Nos hébergements</h2>
+                <ul>
+                    <li><a href="#">Charte qualité</a></li>
+                    <li><a href="#">Soumettre votre hôtel</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>A propos</h2>
+                <ul>
+                    <li><a href="#">Centre d'aide</a></li>
+                    <li><a href="#">Nous contacter</a></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
 </html>
