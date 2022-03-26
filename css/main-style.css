@@ -310,3 +310,51 @@ input {
     flex-wrap: wrap;
     gap: 40px;
 }
+
+/*
+----------------------------
+#   Section Hébergements   #
+----------------------------
+*/
+
+#activites {
+    margin-top: 65px;
+}
+
+#activites .wrapper {
+    display: flex;
+    margin-top: 20px;
+    height: 445px; 
+    gap: 40px;
+}
+
+#activites .wrapper .column {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 40px;
+    flex-wrap: no-wrap;
+}
+
+#activites .wrapper .column .card {
+    width: 100%;
+}
+
+#activites .wrapper .card {
+    border-radius: 15px;
+    -webkit-box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+#activites .wrapper .card img {
+    display: block;
+    width: 100%;
+    height: calc(100% - 60px);
+    object-fit: cover;
+}
+
+#activites .wrapper .card .card-text {
+    padding: 15px;
+}
