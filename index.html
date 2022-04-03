@@ -27,7 +27,7 @@
 
     <body>
         <!-- Starting Header -->
-        <header id="main-header" class="flex flex-sp-bt">
+        <header id="main-header">
             <img src="./images/logo/Booki.png" alt="Logo du site">
             <nav>
                 <ul>
@@ -53,7 +53,7 @@
                     <button class="submit-mobile" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
 
                 </form>
-                <div id="filters-menu" class="flex flex-al-ct">
+                <div id="filters-menu">
                     <h3>Filtres</h3>
                     <div>
                         <a href="#" class="btn-menu">
@@ -83,7 +83,7 @@
                 <section id="hebergements">
                     <h2>Hébergements à Marseille</h2>
                     <!-- Flex Container -->
-                    <div class="flex container">
+                    <div class="container">
                         <!-- Product Display Card -->
                         <article class="card">
                             <img src="./images/hebergements/Auberge_Cannebiere.jpg" alt="Auberge La Cannnebière">
@@ -184,13 +184,15 @@
                         <h2>Les plus populaires</h2>
                         <i class="fas fa-chart-line black-icon"></i>
                     </div>
-                    <div class="container flex">
+                    <div class="container">
                         <article class="card">
                             <img src="./images/hebergements/Hotel_Le_soleil.jpg" alt="Hôtel Le soleil du Matin">
-                            <div class="text">
-                                <h3>Hôtel Le soleil du Matin</h3>
-                                <p>Nuit à partir de <strong>128€</strong></p>
-                                <div>
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hôtel Le soleil du Matin</h3>
+                                    <p>Nuit à partir de <strong>128€</strong></p>
+                                </div>
+                                <div class="stars">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -202,10 +204,12 @@
 
                         <article class="card">
                             <img src="./images/hebergements/Au_coeur_de_leau.jpg" alt="Au Cœur de l'eau des chambres d'hôtes">
-                            <div class="text">
-                                <h3>Au Cœur de l'eau des chambres d'hôtes</h3>
-                                <p>Nuit à partir de <strong>71€</strong></p>
-                                <div>
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Au Cœur de l'eau des chambres d'hôtes</h3>
+                                    <p>Nuit à partir de <strong>71€</strong></p>
+                                </div>
+                                <div class="stars">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -217,10 +221,12 @@
 
                         <article class="card">
                             <img src="./images/hebergements/Hotel_ToutBleu.jpg" alt="Au Cœur de l'eau des chambres d'hôtes">
-                            <div class="text">
-                                <h3>Hotel tout Bleu et Blanc</h3>
-                                <p>Nuit à partir de <strong>71€</strong></p>
-                                <div>
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hotel tout Bleu et Blanc</h3>
+                                    <p>Nuit à partir de <strong>71€</strong></p>
+                                </div>
+                                <div class="stars">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -254,7 +260,7 @@
                         </div>
                     </article>
     
-                    <article class="card">
+                    <article class="card iles-frioul">
                         <img src="./images/activites/Iles_du_Frioul.jpg" alt="Îles du Frioul">
                         <div class="card-text">
                             <h3>Îles du Frioul</h3>
@@ -270,14 +276,14 @@
                 </article>
 
                 <div class="column">
-                    <article class="card">
+                    <article class="card notre-dame">
                         <img src="./images/activites/Notre-Dame.jpg" alt="Notre-Dame-de-la Garde">
                         <div class="card-text">
                             <h3>Notre-Dame-de-la Garde</h3>
                         </div>
                     </article>
     
-                    <article class="card">
+                    <article class="card parc-longchamp">
                         <img src="./images/activites/Parc_Longchamps.jpg" alt="Parc Longchamp">
                         <div class="card-text">
                             <h3>Parc Longchamp</h3>

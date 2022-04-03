@@ -21,6 +21,7 @@ a {
 i {
     color: var(--color-primary);
     font-style: normal;
+    vertical-align: middle;
 }
 
 i.black-icon {
@@ -36,15 +37,26 @@ i.grey-icon {
 # Generic Class #
 -----------------
 */
-.flex {display: flex;}
-.flex-al-ct {align-items: center;}
-.flex-sp-bt {justify-content: space-between;}
 
 .more-btn {
     display: block;
     font-weight: bold;
     font-size: 22px;
     margin-top: 50px;
+}
+
+.card {
+    border-radius: 15px;
+    background-color: white;
+    padding: 5px;
+
+    -webkit-box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+}
+
+.card a {
+    display: block;
 }
 
 /* 
@@ -54,14 +66,19 @@ i.grey-icon {
 */
 
 #main-header {
+    display: flex;
     margin: 65px 67px 68px 93px;
     justify-content: space-between;
-    font-size: 21px;
+    font-size: 20px;
+}
+
+#main-header img {
+    display: block;
 }
 
 #main-header nav ul {
-    list-style: none;
     display: flex;
+    list-style: none;
 }
 
 #main-header nav ul li {
@@ -93,12 +110,13 @@ main {
 */
 
 #menu h2 {
-    margin-bottom: 22px;
+    margin-bottom: 10px;
     font-size: 24px;
 }
 
 #menu p {
-    margin-bottom: 26px;
+    margin-top: 10px;
+    margin-bottom: 35px;
 }
 
 /* Inputs Forms */
@@ -124,7 +142,7 @@ input {
 }
 
 #menu input[type="search"], #menu input[type="submit"], #menu .icon {
-    height: 66px;
+    height: 66px; 
 }
 
 #menu input[type="search"], #menu input[type="submit"] {
@@ -163,10 +181,6 @@ input {
     color: white;
 }
 
-#menu p {
-    margin-top: 48px;
-}
-
 #menu p > i {
     font-size: x-small;
     padding: 9px 12px;
@@ -176,6 +190,10 @@ input {
 }
 
 /* Buttons Menus */
+#filters-menu {
+    display: flex;
+    align-items: baseline;
+}
 
 #filters-menu div {
     margin-left: 44px;
@@ -215,6 +233,7 @@ input {
 }
 
 #hebergements .container {
+    display: flex;
     flex-wrap: wrap;
     gap: 40px;
 }
@@ -226,9 +245,6 @@ input {
 #hebergements .card {
     width: calc(33.33% - 26.66px);
     height: 265px;
-    background-color: white;
-    padding: 5px;
-    border-radius: 15px;
 }
 
 #hebergements .card img {
@@ -246,6 +262,7 @@ input {
 #hebergements .card .text > * {
     margin-top: 5px;
 }
+
 /*
 ----------------------------
 #   Section Popular   #
@@ -276,9 +293,6 @@ input {
     display: flex;
     width: 100%; 
     height: 192px;
-    background-color: white;
-    padding: 5px;
-    border-radius: 15px;
 }
 
 #populaires .card img {
@@ -289,31 +303,28 @@ input {
     object-fit: cover;
 }
 
-#populaires .card .text {
+#populaires .card-content .text > :nth-child(1) {
+    margin-bottom: 16px;
+}
+
+#populaires .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin: 16px 20px;
     width: 190px;
 }
 
-#populaires .card .text > :nth-child(1) {
-    margin-bottom: 16px;
+#populaires .card .stars {
+    justify-content: flex-end;
 }
 
-#populaires .card .text > :nth-child(2) {
-    /* margin-bottom: 56px; */
-}
-
-#populaires .card .text {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-
-#populaires .card .text i {
+#populaires .card .stars i {
     font-size: 17px;
 }
 
 #populaires .container {
+    display: flex;
     flex-wrap: wrap;
     gap: 40px;
 }
@@ -348,12 +359,9 @@ input {
 }
 
 #activites .wrapper .card {
-    border-radius: 15px;
-    -webkit-box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
-    -moz-box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
-    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
     overflow: hidden;
     width: 25%;
+    padding: 0;
 }
 
 #activites .wrapper .card img {
@@ -367,6 +375,21 @@ input {
     padding: 15px;
 }
 
+.fort-pomegues {
+    height: calc(66% - 20px);
+}
+
+.iles-frioul {
+    height: calc(44% - 20px);
+}
+
+.notre-dame {
+    height: calc(48% - 20px);
+}
+
+.parc-longchamp {
+    height: calc(52% - 20px);
+}
 
 /*
 ----------------------------
@@ -396,4 +419,139 @@ footer ul {
 
 footer li {
     margin-bottom: 10px;
+}
+
+@media screen and (max-width: 992px) {
+    /* Class Generics */
+    body,html,main,footer {
+        width: 100vw;
+        box-sizing: border-box;
+    }
+
+    /* Main Content */
+    main {
+        margin: 0;
+    }
+
+    /* Menu Interaction */
+    #menu {
+        margin: 20px;
+    }
+
+    #filters-menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+
+    #filters-menu div {
+        margin-left: 0;
+    }
+
+    #filters-menu h3 {
+        display: block;
+    }
+
+    #filters-menu .btn-menu {
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+
+    /*  Hebergement Section */
+    main > .wrapper {
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+
+    #hebergements {
+        background-color: white;
+    }
+
+    #hebergements, #populaires, #activites {
+        width: 100%;
+        border-radius: 0;
+        padding: 50px 20px;
+    }
+
+    #hebergements .card {
+        width: 100%;
+    }
+
+    /* Activity Section */
+
+    #activites {
+        margin-top: 0;
+    }
+
+    #activites .wrapper {
+        flex-direction: column;
+        height: max-content;
+    }
+
+    #activites .wrapper .card {
+        width: 100%;
+        height: 30vh;
+    }
+
+    #activites .wrapper .column {
+        width: 100%;
+    }
+
+    /* Footer Section */
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer div {
+        width: 100%;
+        margin-top: 25px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Header */
+    #main-header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 30px 0 35px 0;
+    }
+    #main-header nav {
+        display: flex;
+        width: 100%;
+    }
+
+    #main-header nav ul li {
+        margin: 30px 0 0 0;
+    }
+
+    #main-header a {
+        display: inline-block;
+        padding-bottom: 10px;
+        border-bottom: 2px solid var(--bg-color);
+    }
+
+    #main-header a:hover {
+        border-top: 0;
+        border-bottom: 2px solid var(--color-primary);
+        padding-top: 0; 
+    }
+
+    
+    #menu input[type="submit"] {
+        display: none;
+    }
+
+    #menu input[type="search"] {
+        flex-grow: 1;
+    }
+
+    .submit-mobile {
+        display: block;
+        position: absolute;
+        right: 20px;
+    }
+
 }
