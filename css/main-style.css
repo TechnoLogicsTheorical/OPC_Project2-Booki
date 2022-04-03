@@ -94,7 +94,7 @@ main {
 
 #menu h2 {
     margin-bottom: 22px;
-    font: size 24px;
+    font-size: 24px;
 }
 
 #menu p {
@@ -299,8 +299,15 @@ input {
 }
 
 #populaires .card .text > :nth-child(2) {
-    margin-bottom: 56px;
+    /* margin-bottom: 56px; */
 }
+
+#populaires .card .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 
 #populaires .card .text i {
     font-size: 17px;
@@ -324,7 +331,7 @@ input {
 #activites .wrapper {
     display: flex;
     margin-top: 20px;
-    height: 445px; 
+    height: 445px;
     gap: 40px;
 }
 
@@ -333,7 +340,7 @@ input {
     flex-direction: column;
     align-items: stretch;
     gap: 40px;
-    flex-wrap: no-wrap;
+    width: 25%;
 }
 
 #activites .wrapper .column .card {
@@ -346,6 +353,7 @@ input {
     -moz-box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
     box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
     overflow: hidden;
+    width: 25%;
 }
 
 #activites .wrapper .card img {
@@ -370,7 +378,12 @@ footer {
     display: flex;
     background-color: var(--bg-color);
     justify-content: space-around;
-    padding: 50px 450px 35px 0;
+    padding: 50px;
+    width: 100%;
+}
+
+footer div {
+    width: 33.33%;
 }
 
 footer h2 {
